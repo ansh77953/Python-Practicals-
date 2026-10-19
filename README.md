@@ -3,7 +3,7 @@ Python Practicals
 # Index
 | S.No | Practical | 
 | :--- | :--- |
-| 1 | Write a program to find the roots of a quadratic equation |
+| 1 | Write a program to find the roots of a quadratic equation. |
 | 2 | Write a program to accept a number 'n' and <br /> a. Check if 'n' is prime <br /> b. Generate all prime numbers till 'n' <br /> c. Generate first 'n' prime numbers |
 | 3 | Write a program to create a pyramid of the character '*' and a reverse pyramid |
 | 4 | Write a program that accepts a character and performs the following: <be /> a. print whether the character is a letter or numeric digit or a special character. <br /> b. if the character is a letter, print whether the letter is uppercase or lowercase <be /> c. if the character is a numeric digit, prints its name in text |
@@ -18,3 +18,13 @@ Python Practicals
 | 13 | Write a program to define a class "2DPoint" with coordinates x and y as attributes. Create relevant methods and print the objects. Also define a method distance to calculate the distance between any two point objects. |
 | 14 | Inherit the above class to create a "3Dpoint" with additional attribute z. Override the method defined in "2DPoint" class, to calculate distance between two points of the "3DPoint" class. |
 | 15 | Write a program to accept a name from a user. Raise and handle appropriate exception(s) if the text entered by the user contains digits and/or special characters. |
+
+---
+# Practical-1
+Write a program to find the roots of a quadratic equation
+
+```
+nejdjdjdn
+
+```
+
