@@ -57,10 +57,7 @@ Output:
 
 ---
 # Practical-2
-#### Prime Numbers
-1 - Check Prime numbers 
-2 - Print All Prime numbers till 'n'
-3 - First 'n' Prime numbers 
+#### Prime Numbers <br /> 1 - Check Prime numbers <br /> 2 - Print All Prime numbers till 'n' <br /> 3 - First 'n' Prime numbers 
 
 ```Python
 
