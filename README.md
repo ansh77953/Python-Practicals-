@@ -50,8 +50,7 @@ else:
 
 
 ```
-Trail Run 
-Inputs: a=1, b=5, c=6
+Trail Run <br /> Inputs: a=1, b=5, c=6
 
 Output:
 <img width="657" height="240" alt="Image" src="https://github.com/user-attachments/assets/43913bb4-c5bd-46a9-aed3-7a0f24411993" />
@@ -99,7 +98,6 @@ print("First", n, "primes:", first_n_primes(n))
 
 ```
 
-Trail Run 
-Inputs: 
+Trail Run <br /> Inputs: 
 
 
