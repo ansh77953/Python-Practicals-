@@ -21,7 +21,7 @@ Python Practicals
 
 ---
 # Practical-1
-The roots of a quadratic equation
+#### The roots of a quadratic equation
 
 ```Python
 
@@ -57,7 +57,7 @@ Output:
 
 ---
 # Practical-2
-Prime Numbers
+#### Prime Numbers
 1 - Check Prime numbers 
 2 - Print All Prime numbers till 'n'
 3 - First 'n' Prime numbers 
@@ -105,7 +105,7 @@ Output:
 
 ---
 # Practical-3
-Create a pyramid of '*' and a reverse pyramid
+#### Create a pyramid of '*' and a reverse pyramid
 
 ```Python
 
@@ -128,7 +128,7 @@ Output:
 
 ---
 # Practical-4
-Check Character
+#### Check Character
 
 ```Python
 
