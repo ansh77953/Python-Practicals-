@@ -126,4 +126,29 @@ Trail Run <br /> Input: a=6
 Output:
 <img width="1080" height="842" alt="Image" src="https://github.com/user-attachments/assets/fdff5d90-a6a6-4a42-be25-4e0a71760fba" />
 
+---
+# Practical-4
+Check Character
+
+```Python
+
+ch = input("Enter a single character: ")[0]
+names = ["ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"]
+
+if ch.isalpha():
+    print(ch, "is a letter")
+    if ch.isupper():
+        print("It is uppercase")
+    else:
+        print("It is lowercase")
+elif ch.isdigit():
+    print(ch, "is a numeric digit")
+    print("Name:", names[int(ch)])
+else:
+    print(ch, "is a special character")
+
+```
+
+Trail Run <br /> Inputs:
+
 
