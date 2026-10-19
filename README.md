@@ -24,7 +24,29 @@ Python Practicals
 Write a program to find the roots of a quadratic equation
 
 ```
-nejdjdjdn
+import math
+
+print("----- Q1 -----")
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+c = float(input("Enter c: "))
+
+if a == 0:
+    print("Not a quadratic equation")
+else:
+    d = b * b - 4 * a * c
+    if d > 0:
+        r1 = (-b + math.sqrt(d)) / (2 * a)
+        r2 = (-b - math.sqrt(d)) / (2 * a)
+        print("Real and different roots:", r1, r2)
+    elif d == 0:
+        r = -b / (2 * a)
+        print("Real and equal roots:", r, r)
+    else:
+        real = -b / (2 * a)
+        imag = math.sqrt(-d) / (2 * a)
+        print("Complex roots:", real, "+", imag, "i and", real, "-", imag, "i")
+
 
 ```
 
