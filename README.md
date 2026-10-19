@@ -7,7 +7,7 @@ Python Practicals
 | 2 | Prime Numbers <br /> a-Check Prime numbers  <br /> b-Print All Prime numbers till 'n' <br /> c-First 'n' Prime numbers |
 | 3 | Create a pyramid of '*' and a reverse pyramid. |
 | 4 | Check Character |
-| 5 | Write a program to perform the following operations on a string <br /> a. Find the frequency of a character in a string. <br /> b. Replace a character by another character in a string. <br /> c. Remove the first occurrence of a character from a string. <br /> d. Remove all occurrences of a character from a string |
+| 5 | String Operation |
 | 6 | Write a program to swap the first n characters of two strings. |
 | 7 | Write a function that accepts two strings and returns the indices of all the occurrences of the second string in the first string as a list. If the second string is not present in the first string then it should return -1. |
 | 8 | Write a program to create a list of the cubes of only the even integers appearing in the input list (may have elements of other types also) using the following: <br /> a. 'for' loop <br /> b. list comprehension |
@@ -154,5 +154,54 @@ Trail Run <br /> Inputs: A, 7
 Output:
 | <img width="982" height="303" alt="Image" src="https://github.com/user-attachments/assets/eceb4b4c-7d8a-428d-beeb-50b72292a7ae" /> | <img width="950" height="297" alt="Image" src="https://github.com/user-attachments/assets/7cee53a0-0fdf-4fac-be92-0cb01d4250ec" /> |
 |:---:|:---:|
+
+---
+# Practical-5
+String Operation 
+
+```Python
+
+s = input("Enter a string: ")
+x = input("Enter a character: ")[0]
+
+# a. frequency
+count = 0
+for i in s:
+    if i == x:
+        count += 1
+print("Frequency of", x, "=", count)
+
+# b. replace a character by another
+y = input("Enter the character to replace with: ")[0]
+new_s = ""
+for i in s:
+    if i == x:
+        new_s += y
+    else:
+        new_s += i
+print("After replacing:", new_s)
+
+# c. remove first occurrence
+new_s = ""
+removed = False
+for i in s:
+    if i == x and not removed:
+        removed = True
+    else:
+        new_s += i
+print("After removing first occurrence:", new_s)
+
+# d. remove all occurrences
+new_s = ""
+for i in s:
+    if i != x:
+        new_s += i
+print("After removing all occurrences:", new_s)
+
+```
+
+Trail Run <br /> Inputs:
+
+Output:
 
 
