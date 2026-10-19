@@ -6,7 +6,7 @@ Python Practicals
 | 1 | The roots of a quadratic equation. |
 | 2 | Prime Numbers <br /> a-Check Prime numbers  <br /> b-Print All Prime numbers till 'n' <br /> c-First 'n' Prime numbers |
 | 3 | Create a pyramid of '*' and a reverse pyramid. |
-| 4 | Write a program that accepts a character and performs the following: <be /> a. print whether the character is a letter or numeric digit or a special character. <br /> b. if the character is a letter, print whether the letter is uppercase or lowercase <be /> c. if the character is a numeric digit, prints its name in text |
+| 4 | Check Character |
 | 5 | Write a program to perform the following operations on a string <br /> a. Find the frequency of a character in a string. <br /> b. Replace a character by another character in a string. <br /> c. Remove the first occurrence of a character from a string. <br /> d. Remove all occurrences of a character from a string |
 | 6 | Write a program to swap the first n characters of two strings. |
 | 7 | Write a function that accepts two strings and returns the indices of all the occurrences of the second string in the first string as a list. If the second string is not present in the first string then it should return -1. |
@@ -124,5 +124,6 @@ for i in range(rows, 0, -1):
 Trail Run <br /> Input: a=6
 
 Output:
+<img width="1080" height="842" alt="Image" src="https://github.com/user-attachments/assets/fdff5d90-a6a6-4a42-be25-4e0a71760fba" />
 
 
