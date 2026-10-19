@@ -4,7 +4,7 @@ Python Practicals
 | S.No | Practical | 
 | :--- | :--- |
 | 1 | The roots of a quadratic equation. |
-| 2 | Write a program to accept a number 'n' and <br /> a. Check if 'n' is prime <br /> b. Generate all prime numbers till 'n' <br /> c. Generate first 'n' prime numbers |
+| 2 | Prime Numbers <br /> a-Check Prime numbers  <br /> b-Print All Prime numbers till 'n' <br /> c-First 'n' Prime numbers |
 | 3 | Write a program to create a pyramid of the character '*' and a reverse pyramid |
 | 4 | Write a program that accepts a character and performs the following: <be /> a. print whether the character is a letter or numeric digit or a special character. <br /> b. if the character is a letter, print whether the letter is uppercase or lowercase <be /> c. if the character is a numeric digit, prints its name in text |
 | 5 | Write a program to perform the following operations on a string <br /> a. Find the frequency of a character in a string. <br /> b. Replace a character by another character in a string. <br /> c. Remove the first occurrence of a character from a string. <br /> d. Remove all occurrences of a character from a string |
@@ -98,6 +98,9 @@ print("First", n, "primes:", first_n_primes(n))
 
 ```
 
-Trail Run <br /> Inputs: 
+Trail Run <br /> Inputs: a=5
+
+Output:
+<img width="1007" height="350" alt="Image" src="https://github.com/user-attachments/assets/6c8df528-622c-4385-8be6-d16cf2d28560" />
 
 
