@@ -5,7 +5,7 @@ Python Practicals
 | :--- | :---: |
 | 1 | Write a program to find the roots of a quadratic equation |
 | 2 | Write a program to accept a number 'n' and. 
-a. Check if 'n' is prime b. Generate all prime numbers till 'n'
+a. Check if 'n' is prime b. Generate all prime numbers till 'n'|
 c. Generate first 'n' prime numbers |
 | 3 | Write a program to create a pyramid of the character '*' and a reverse pyramid |
 | 4 | Write a program that accepts a character and performs the following:
