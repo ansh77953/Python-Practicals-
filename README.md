@@ -218,7 +218,10 @@ print("After swapping:", new1, new2)
 
 ```
 
-Trail Run <br /> Inputs:
+Trail Run <br /> Inputs: 
+First String: Khel khatam beta
+Second string: Baby doll masone di
 
 Output:
+<img width="948" height="240" alt="Image" src="https://github.com/user-attachments/assets/0b3ae4f3-10ee-458e-980c-92740fd615b9" />
 
