@@ -23,7 +23,8 @@ Python Practicals
 # Practical-1
 Write a program to find the roots of a quadratic equation
 
-```
+```Python
+
 import math
 
 print("----- Q1 -----")
