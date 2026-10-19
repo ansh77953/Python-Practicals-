@@ -3,7 +3,7 @@ Python Practicals
 # Index
 | S.No | Practical | 
 | :--- | :--- |
-| 1 | Write a program to find the roots of a quadratic equation. |
+| 1 | The roots of a quadratic equation. |
 | 2 | Write a program to accept a number 'n' and <br /> a. Check if 'n' is prime <br /> b. Generate all prime numbers till 'n' <br /> c. Generate first 'n' prime numbers |
 | 3 | Write a program to create a pyramid of the character '*' and a reverse pyramid |
 | 4 | Write a program that accepts a character and performs the following: <be /> a. print whether the character is a letter or numeric digit or a special character. <br /> b. if the character is a letter, print whether the letter is uppercase or lowercase <be /> c. if the character is a numeric digit, prints its name in text |
@@ -21,7 +21,7 @@ Python Practicals
 
 ---
 # Practical-1
-Write a program to find the roots of a quadratic equation
+The roots of a quadratic equation
 
 ```Python
 
@@ -55,5 +55,51 @@ Inputs: a=1, b=5, c=6
 
 Output:
 <img width="657" height="240" alt="Image" src="https://github.com/user-attachments/assets/43913bb4-c5bd-46a9-aed3-7a0f24411993" />
+
+---
+# Practical-2
+Prime Numbers
+1 - Check Prime numbers 
+2 - Print All Prime numbers till 'n'
+3 - First 'n' Prime numbers 
+
+```Python
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def primes_till_n(n):
+    result = []
+    for i in range(2, n + 1):
+        if is_prime(i):
+            result.append(i)
+    return result
+
+def first_n_primes(n):
+    result = []
+    num = 2
+    while len(result) < n:
+        if is_prime(num):
+            result.append(num)
+        num += 1
+    return result
+
+n = int(input("Enter n: "))
+if is_prime(n):
+    print(n, "is prime")
+else:
+    print(n, "is not prime")
+print("Primes till", n, ":", primes_till_n(n))
+print("First", n, "primes:", first_n_primes(n))
+
+```
+
+Trail Run 
+Inputs: 
 
 
