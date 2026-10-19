@@ -7,8 +7,8 @@ Python Practicals
 | 2 | Prime Numbers <br /> a-Check Prime numbers  <br /> b-Print All Prime numbers till 'n' <br /> c-First 'n' Prime numbers |
 | 3 | Create a pyramid of '*' and a reverse pyramid. |
 | 4 | Check Character |
-| 5 | String Operation |
-| 6 | Write a program to swap the first n characters of two strings. |
+| 5 | Basic String Operations |
+| 6 | Swap the first n characters of two strings. |
 | 7 | Write a function that accepts two strings and returns the indices of all the occurrences of the second string in the first string as a list. If the second string is not present in the first string then it should return -1. |
 | 8 | Write a program to create a list of the cubes of only the even integers appearing in the input list (may have elements of other types also) using the following: <br /> a. 'for' loop <br /> b. list comprehension |
 | 9 | Write a program to read a file and <br /> a. Print the total number of characters, words and lines in the file. <br /> b. Calculate the frequency of each character in the file. Use a variable of dictionary type to maintain the count. <br /> c. Print the words in reverse order. <br /> d. Copy even lines of the file to a file named 'Filel' and odd lines to another file named 'File2'. |
@@ -159,7 +159,7 @@ Output:
 ```Python
 
 s = input("Enter a string: ")
-x = input("Enter a character: ")[0]
+x = input("Enter a character: ")
 
 # a. frequency
 count = 0
@@ -169,7 +169,7 @@ for i in s:
 print("Frequency of", x, "=", count)
 
 # b. replace a character by another
-y = input("Enter the character to replace with: ")[0]
+y = input("Enter the character to replace with: ")
 new_s = ""
 for i in s:
     if i == x:
@@ -200,5 +200,25 @@ print("After removing all occurrences:", new_s)
 Trail Run <br /> Inputs:
 
 Output:
+<img width="1080" height="494" alt="Image" src="https://github.com/user-attachments/assets/f072d883-78a6-462d-8dfa-93629f05457e" />
 
+---
+# Practical-6
+#### Swap the first n characters of two strings.
+
+```Python
+
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+n = int(input("Enter n: "))
+
+new1 = s2[:n] + s1[n:]
+new2 = s1[:n] + s2[n:]
+print("After swapping:", new1, new2)
+
+```
+
+Trail Run <br /> Inputs:
+
+Output:
 
