@@ -151,7 +151,7 @@ else:
 
 Trail Run <br /> Inputs: A, 7
 Output:
-| :---: | :---: |
+| :---: | :---: | 
 | <img width="982" height="303" alt="Image" src="https://github.com/user-attachments/assets/eceb4b4c-7d8a-428d-beeb-50b72292a7ae" /> | <img width="950" height="297" alt="Image" src="https://github.com/user-attachments/assets/7cee53a0-0fdf-4fac-be92-0cb01d4250ec" /> |
 
 
