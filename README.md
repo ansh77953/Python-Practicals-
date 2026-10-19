@@ -5,7 +5,7 @@ Python Practicals
 | :--- | :--- |
 | 1 | The roots of a quadratic equation. |
 | 2 | Prime Numbers <br /> a-Check Prime numbers  <br /> b-Print All Prime numbers till 'n' <br /> c-First 'n' Prime numbers |
-| 3 | Write a program to create a pyramid of the character '*' and a reverse pyramid |
+| 3 | Create a pyramid of '*' and a reverse pyramid. |
 | 4 | Write a program that accepts a character and performs the following: <be /> a. print whether the character is a letter or numeric digit or a special character. <br /> b. if the character is a letter, print whether the letter is uppercase or lowercase <be /> c. if the character is a numeric digit, prints its name in text |
 | 5 | Write a program to perform the following operations on a string <br /> a. Find the frequency of a character in a string. <br /> b. Replace a character by another character in a string. <br /> c. Remove the first occurrence of a character from a string. <br /> d. Remove all occurrences of a character from a string |
 | 6 | Write a program to swap the first n characters of two strings. |
@@ -102,5 +102,27 @@ Trail Run <br /> Inputs: a=5
 
 Output:
 <img width="1007" height="350" alt="Image" src="https://github.com/user-attachments/assets/6c8df528-622c-4385-8be6-d16cf2d28560" />
+
+---
+# Practical-3
+Create a pyramid of '*' and a reverse pyramid
+
+```Python
+
+rows = int(input("Enter number of rows: "))
+
+print("Pyramid:")
+for i in range(1, rows + 1):
+    print(" " * (rows - i) + "* " * i)
+
+print("Reverse pyramid:")
+for i in range(rows, 0, -1):
+    print(" " * (rows - i) + "* " * i)
+
+```
+
+Trail Run <br /> Input: a=6
+
+Output:
 
 
