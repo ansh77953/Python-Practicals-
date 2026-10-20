@@ -13,8 +13,8 @@ Python Practicals
 | 8 | Lists <br /> a. 'for' loop <br /> b. list comprehension |
 | 9 | File Handling |
 | 10 |  Dictionary |
-| 11 |  |
-| 12 | Define a class Employee that stores information about employees in the company. The class should contain the following: <br /> (i) data members- count (to keep a record of all the objects being created for this class) and for every employee: an employee number, Name, Dept, Basic, DA and HRA. <br /> (ii) function members: <br /> a._init_method to initialize and/or update the members. Add statements to ensure that the program is terminated if any of Basic, DA and HRA is set to a negative value. <br /> b. function salary, that returns salary as the sum of Basic, DA and HRA. <br /> _del_function to decrease the number of objects created for the class. <br /> d. str function to display the details of an employee along with the salary of an employee in a proper format. |
+| 11 | Tuple |
+| 12 |  |
 | 13 | Write a program to define a class "2DPoint" with coordinates x and y as attributes. Create relevant methods and print the objects. Also define a method distance to calculate the distance between any two point objects. |
 | 14 | Inherit the above class to create a "3Dpoint" with additional attribute z. Override the method defined in "2DPoint" class, to calculate distance between two points of the "3DPoint" class. |
 | 15 | Write a program to accept a name from a user. Raise and handle appropriate exception(s) if the text entered by the user contains digits and/or special characters. |
@@ -377,3 +377,9 @@ print("Minimum:", min(t3))
 Trail Run <br /> Input: t1=(1, 2, 5, 7, 9, 2, 4, 6, 8, 10) 
 
 Output: <br /> <img width="1016" height="326" alt="Image" src="https://github.com/user-attachments/assets/c00f4d24-118d-493d-b89f-101ab625f0ec" />
+
+---
+# Practical-12
+#### Define a class Employee that stores information about employees in the company. The class should contain the following: <br /> (i) data members- count (to keep a record of all the objects being created for this class) and for every employee: an employee number, Name, Dept, Basic, DA and HRA. <br /> (ii) function members: <br /> a._init_method to initialize and/or update the members. Add statements to ensure that the program is terminated if any of Basic, DA and HRA is set to a negative value. <br /> b. function salary, that returns salary as the sum of Basic, DA and HRA. <br /> _del_function to decrease the number of objects created for the class. <br /> d. str function to display the details of an employee along with the salary of an employee in a proper format.
+
+```Python
