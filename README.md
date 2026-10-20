@@ -523,4 +523,5 @@ except InvalidNameError as e:
 Trial Run <br />
 
 Output: <br />
-
+| <img width="787" height="240" alt="Image" src="https://github.com/user-attachments/assets/075d48e6-9c9f-47fc-94b6-079d04ddf0f5" /> | <img width="888" height="240" alt="Image" src="https://github.com/user-attachments/assets/6dd0536c-81e4-4c4f-b791-8b4e59557e4f" /> |
+|:---:|:---:|
