@@ -11,7 +11,7 @@ Python Practicals
 | 6 | String Operations-II|
 | 7 | String Operations-III|
 | 8 | Lists <br /> a. 'for' loop <br /> b. list comprehension |
-| 9 | Write a program to read a file and <br /> a. Print the total number of characters, words and lines in the file. <br /> b. Calculate the frequency of each character in the file. Use a variable of dictionary type to maintain the count. <br /> c. Print the words in reverse order. <br /> d. Copy even lines of the file to a file named 'Filel' and odd lines to another file named 'File2'. |
+| 9 | File Handling |
 | 10 | Write a function that prints a dictionary where the keys are numbers between 1 and 5 and the values are cubes of the keys. |
 | 11 | Consider a tuple t1=(1, 2, 5, 7, 9, 2, 4, 6, 8, 10). Write a program to perform following operations: <br /> a. Print half the values of the tuple in one line and the other half in the next line. <br /> b. Print another tuple whose values are even numbers in the given tuple. <br /> c. Concatenate a tuple t2=(11,13,15) with t1. <br /> d. Return maximum and minimum value from this tuple. |
 | 12 | Define a class Employee that stores information about employees in the company. The class should contain the following: <br /> (i) data members- count (to keep a record of all the objects being created for this class) and for every employee: an employee number, Name, Dept, Basic, DA and HRA. <br /> (ii) function members: <br /> a._init_method to initialize and/or update the members. Add statements to ensure that the program is terminated if any of Basic, DA and HRA is set to a negative value. <br /> b. function salary, that returns salary as the sum of Basic, DA and HRA. <br /> _del_function to decrease the number of objects created for the class. <br /> d. str function to display the details of an employee along with the salary of an employee in a proper format. |
@@ -248,7 +248,7 @@ print(find_indices("hello", "xyz"))    # -1
 
 Trail Run <br /> Inputs: <br /> s1=abababc, s2=ab <br /> s1=hello, s2=xyz
 
-Output: <br /> [0, 2, 4] <br /> -1
+Output: <br /> [0, 2, 4] <br /> -1 <br />
 <img width="744" height="240" alt="Image" src="https://github.com/user-attachments/assets/4d7d6d09-b4a8-4b43-b814-069f0c66dc0b" />
 
 ---
@@ -276,4 +276,50 @@ Trail Run <br /> Inputs: <br /> lst = [1, 2, "hello", 4, 3.5, 6, "8", 7, 10, Tru
 Output:
 <img width="920" height="240" alt="Image" src="https://github.com/user-attachments/assets/45dfbce6-a6a0-4016-b830-d936d26ed741" />
 
+---
+# Practical-9
+#### Write a program to read a file and <br /> a. Print the total number of characters, words and lines in the file. <br /> b. Calculate the frequency of each character in the file. Use a variable of dictionary type to maintain the count. <br /> c. Print the words in reverse order. <br /> d. Copy even lines of the file to a file named 'Filel' and odd lines to another file named 'File2'.
 
+```Python
+
+filename = input("Enter file name: ")
+
+# a. characters, words, lines
+f = open(filename, "r")
+text = f.read()
+f.close()
+lines = text.split("\n")
+if lines[-1] == "":
+    lines.pop()
+print("Characters:", len(text))
+print("Words:", len(text.split()))
+print("Lines:", len(lines))
+
+# b. frequency of each character using dictionary
+freq = {}
+for ch in text:
+    if ch in freq:
+        freq[ch] += 1
+    else:
+        freq[ch] = 1
+print("Frequency:", freq)
+
+# c. words in reverse order
+words = text.split()
+words.reverse()
+print("Words in reverse:", words)
+
+# d. even lines -> File1, odd lines -> File2
+f1 = open("File1.txt", "w")
+f2 = open("File2.txt", "w")
+for i in range(len(lines)):
+    line_no = i + 1
+    if line_no % 2 == 0:
+        f1.write(lines[i] + "\n")
+    else:
+        f2.write(lines[i] + "\n")
+f1.close()
+f2.close()
+print("Even lines copied to File1.txt, odd lines to File2.txt")
+
+```
