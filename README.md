@@ -5,19 +5,19 @@ Python Practicals
 | :--- | :--- |
 | 1 | [The roots of a quadratic equation.](#Practucal-1) |
 | 2 | [Prime Numbers <br /> a-Check Prime numbers  <br /> b-Print All Prime numbers till 'n' <br /> c-First 'n' Prime numbers](#Practical-2) |
-| 3 | Create a pyramid of '*' and a reverse pyramid. |
-| 4 | Check Character |
-| 5 | String Operations-I |
-| 6 | String Operations-II|
-| 7 | String Operations-III|
-| 8 | Lists <br /> a. 'for' loop <br /> b. list comprehension |
-| 9 | File Handling |
-| 10 |  Dictionary |
-| 11 | Tuple |
-| 12 | Employee Class |
-| 13 | Class 2DPoint |
-| 14 | Class 3DPoint(Inheritance)|
-| 15 | Exception Handling |
+| 3 | [Create a pyramid of '*' and a reverse pyramid.](#Practical-3) |
+| 4 | [Check Character](#Practical-4) |
+| 5 | [String Operations-I](#Practical-5) |
+| 6 | [String Operations-II](#Practical-6) |
+| 7 | [String Operations-III](#Practical-7) |
+| 8 | [Lists <br /> a. 'for' loop <br /> b. list comprehension](#Practical-8) |
+| 9 | [File Handling](#Practical-9) |
+| 10 | [Dictionary](#Practical-10) |
+| 11 | [Tuple](#Practical-11) |
+| 12 | [Employee Class](#Practical-12) |
+| 13 | [Class 2DPoint](#Practical-13) |
+| 14 | [Class 3DPoint(Inheritance)](#Practical-14) |
+| 15 | [Exception Handling](#Practical-15) |
 
 ---
 # Practical-1
