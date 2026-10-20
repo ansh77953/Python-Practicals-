@@ -21,7 +21,7 @@ Python Practicals
 
 ---
 # Practical-1
-#### The roots of a quadratic equation
+#### Write a program to find the roots of a quadratic equation
 
 ```Python
 
@@ -57,7 +57,7 @@ Output:
 
 ---
 # Practical-2
-#### Prime Numbers <br /> 1 - Check Prime numbers <br /> 2 - Print All Prime numbers till 'n' <br /> 3 - First 'n' Prime numbers 
+#### Write a program to accept a number 'n' and <br/> a. Check if 'n' is prime <br /> b. Generate all prime numbers till 'n' <br /> c. Generate first 'n' prime numbers <br /> This program may be done using functions.
 
 ```Python
 
@@ -102,7 +102,7 @@ Output:
 
 ---
 # Practical-3
-#### Create a pyramid of '*' and a reverse pyramid
+#### Write a program to create a pyramid of the character '*' and a reverse pyramid
 
 ```Python
 
@@ -125,7 +125,7 @@ Output:
 
 ---
 # Practical-4
-#### Check Character
+#### Write a program that accepts a character and performs the following: <br /> a. print whether the character is a letter or numeric digit or a special character. <br /> b. if the character is a letter, print whether the letter is uppercase or lowercase <br /> c. if the character is a numeric digit, prints its name in text.
 
 ```Python
 
@@ -154,7 +154,7 @@ Output:
 
 ---
 # Practical-5
-#### String Operation 
+#### Write a program to perform the following operations on a string <br /> a. Find the frequency of a character in a string. <br /> b. Replace a character by another character in a string. <br /> c. Remove the first occurrence of a character from a string. <br /> d. Remove all occurrences of a character from a string.
 
 ```Python
 
@@ -204,7 +204,7 @@ Output:
 
 ---
 # Practical-6
-#### Swap the first n characters of two strings.
+#### Write a program to swap the first n characters of two strings.
 
 ```Python
 
