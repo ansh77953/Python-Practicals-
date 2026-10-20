@@ -370,10 +370,10 @@ t3 = t1 + t2
 print("Concatenated:", t3)
 
 # d. max and min
-print("Maximum:", max(t1))
-print("Minimum:", min(t1))
+print("Maximum:", max(t3))
+print("Minimum:", min(t3))
 
 ```
 Trail Run <br /> Input: t1=(1, 2, 5, 7, 9, 2, 4, 6, 8, 10) 
 
-Output: <br />
+Output: <br /> <img width="1016" height="326" alt="Image" src="https://github.com/user-attachments/assets/c00f4d24-118d-493d-b89f-101ab625f0ec" />
