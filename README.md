@@ -13,7 +13,7 @@ Python Practicals
 | 8 | Lists <br /> a. 'for' loop <br /> b. list comprehension |
 | 9 | File Handling |
 | 10 |  Dictionary |
-| 11 | Consider a tuple t1=(1, 2, 5, 7, 9, 2, 4, 6, 8, 10). Write a program to perform following operations: <br /> a. Print half the values of the tuple in one line and the other half in the next line. <br /> b. Print another tuple whose values are even numbers in the given tuple. <br /> c. Concatenate a tuple t2=(11,13,15) with t1. <br /> d. Return maximum and minimum value from this tuple. |
+| 11 |  |
 | 12 | Define a class Employee that stores information about employees in the company. The class should contain the following: <br /> (i) data members- count (to keep a record of all the objects being created for this class) and for every employee: an employee number, Name, Dept, Basic, DA and HRA. <br /> (ii) function members: <br /> a._init_method to initialize and/or update the members. Add statements to ensure that the program is terminated if any of Basic, DA and HRA is set to a negative value. <br /> b. function salary, that returns salary as the sum of Basic, DA and HRA. <br /> _del_function to decrease the number of objects created for the class. <br /> d. str function to display the details of an employee along with the salary of an employee in a proper format. |
 | 13 | Write a program to define a class "2DPoint" with coordinates x and y as attributes. Create relevant methods and print the objects. Also define a method distance to calculate the distance between any two point objects. |
 | 14 | Inherit the above class to create a "3Dpoint" with additional attribute z. Override the method defined in "2DPoint" class, to calculate distance between two points of the "3DPoint" class. |
@@ -339,3 +339,41 @@ def print_cubes():
 print_cubes()
 
 ```
+Trail Run 
+
+Output: <br />
+<img width="922" height="296" alt="Image" src="https://github.com/user-attachments/assets/f3881bd3-fa7f-4bc8-b8d8-5546f12e9445" />
+
+---
+# Practical-11
+#### Consider a tuple t1=(1, 2, 5, 7, 9, 2, 4, 6, 8, 10). Write a program to perform following operations: <br /> a. Print half the values of the tuple in one line and the other half in the next line. <br /> b. Print another tuple whose values are even numbers in the given tuple. <br /> c. Concatenate a tuple t2=(11,13,15) with t1. <br /> d. Return maximum and minimum value from this tuple.
+
+```Python
+
+t1 = (1, 2, 5, 7, 9, 2, 4, 6, 8, 10)
+
+# a. half in one line, other half in next
+mid = len(t1) // 2
+print(t1[:mid])
+print(t1[mid:])
+
+# b. tuple of even numbers
+even = ()
+for i in t1:
+    if i % 2 == 0:
+        even += (i,)
+print("Even tuple:", even)
+
+# c. concatenate with t2
+t2 = (11, 13, 15)
+t3 = t1 + t2
+print("Concatenated:", t3)
+
+# d. max and min
+print("Maximum:", max(t1))
+print("Minimum:", min(t1))
+
+```
+Trail Run <br /> Input: t1=(1, 2, 5, 7, 9, 2, 4, 6, 8, 10) 
+
+Output: <br />
