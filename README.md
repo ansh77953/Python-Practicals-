@@ -240,10 +240,14 @@ def find_indices(s1, s2):
         return -1
     return result
 
+print(find_indices("abababc", "ab"))   # [0, 2, 4]
+print(find_indices("hello", "xyz"))    # -1
+
+
 ```
 
-Trail Run <br /> Inputs: s1= ,s2= ,
+Trail Run <br /> Inputs: <br /> s1=abababc, s2=ab <br /> s1=hello, s2=xyz
 
-Output:
+Output: <br /> [0, 2, 4] <br /> -1
 
 
