@@ -12,7 +12,7 @@ Python Practicals
 | 7 | String Operations-III|
 | 8 | Lists <br /> a. 'for' loop <br /> b. list comprehension |
 | 9 | File Handling |
-| 10 | Write a function that prints a dictionary where the keys are numbers between 1 and 5 and the values are cubes of the keys. |
+| 10 |  Dictionary |
 | 11 | Consider a tuple t1=(1, 2, 5, 7, 9, 2, 4, 6, 8, 10). Write a program to perform following operations: <br /> a. Print half the values of the tuple in one line and the other half in the next line. <br /> b. Print another tuple whose values are even numbers in the given tuple. <br /> c. Concatenate a tuple t2=(11,13,15) with t1. <br /> d. Return maximum and minimum value from this tuple. |
 | 12 | Define a class Employee that stores information about employees in the company. The class should contain the following: <br /> (i) data members- count (to keep a record of all the objects being created for this class) and for every employee: an employee number, Name, Dept, Basic, DA and HRA. <br /> (ii) function members: <br /> a._init_method to initialize and/or update the members. Add statements to ensure that the program is terminated if any of Basic, DA and HRA is set to a negative value. <br /> b. function salary, that returns salary as the sum of Basic, DA and HRA. <br /> _del_function to decrease the number of objects created for the class. <br /> d. str function to display the details of an employee along with the salary of an employee in a proper format. |
 | 13 | Write a program to define a class "2DPoint" with coordinates x and y as attributes. Create relevant methods and print the objects. Also define a method distance to calculate the distance between any two point objects. |
@@ -321,5 +321,21 @@ for i in range(len(lines)):
 f1.close()
 f2.close()
 print("Even lines copied to File1.txt, odd lines to File2.txt")
+
+```
+
+---
+# Practical-10
+#### Write a function that prints a dictionary where the keys are numbers between 1 and 5 and the values are cubes of the keys. 
+
+```Python
+
+def print_cubes():
+    d = {}
+    for i in range(1, 6):
+        d[i] = i ** 3
+    print(d)
+
+print_cubes()
 
 ```
