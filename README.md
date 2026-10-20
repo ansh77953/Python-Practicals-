@@ -10,7 +10,7 @@ Python Practicals
 | 5 | String Operations-I |
 | 6 | String Operations-II|
 | 7 | String Operations-III|
-| 8 | Write a program to create a list of the cubes of only the even integers appearing in the input list (may have elements of other types also) using the following: <br /> a. 'for' loop <br /> b. list comprehension |
+| 8 | Lists <br /> a. 'for' loop <br /> b. list comprehension |
 | 9 | Write a program to read a file and <br /> a. Print the total number of characters, words and lines in the file. <br /> b. Calculate the frequency of each character in the file. Use a variable of dictionary type to maintain the count. <br /> c. Print the words in reverse order. <br /> d. Copy even lines of the file to a file named 'Filel' and odd lines to another file named 'File2'. |
 | 10 | Write a function that prints a dictionary where the keys are numbers between 1 and 5 and the values are cubes of the keys. |
 | 11 | Consider a tuple t1=(1, 2, 5, 7, 9, 2, 4, 6, 8, 10). Write a program to perform following operations: <br /> a. Print half the values of the tuple in one line and the other half in the next line. <br /> b. Print another tuple whose values are even numbers in the given tuple. <br /> c. Concatenate a tuple t2=(11,13,15) with t1. <br /> d. Return maximum and minimum value from this tuple. |
@@ -249,5 +249,27 @@ print(find_indices("hello", "xyz"))    # -1
 Trail Run <br /> Inputs: <br /> s1=abababc, s2=ab <br /> s1=hello, s2=xyz
 
 Output: <br /> [0, 2, 4] <br /> -1
+
+---
+# Practical-8
+#### Write a program to create a list of the cubes of only the even integers appearing in the input list (may have elements of other types also) using the following: <br /> a. 'for' loop <br /> b. list comprehension
+
+```Python
+
+lst = input("Enter a list:- ")
+
+# a. using for loop
+cubes = []
+for i in lst:
+    if type(i) == int and i % 2 == 0:
+        cubes.append(i ** 3)
+print("Using for loop:", cubes)
+
+# b. using list comprehension
+cubes = [i ** 3 for i in lst if type(i) == int and i % 2 == 0]
+print("Using list comprehension:", cubes)
+
+```
+Trail Run <br /> Inputs
 
 
