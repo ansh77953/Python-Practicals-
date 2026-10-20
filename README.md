@@ -16,8 +16,8 @@ Python Practicals
 | 11 | Tuple |
 | 12 | Employee Class |
 | 13 | Class 2DPoint |
-| 14 |  |
-| 15 |  |
+| 14 | Class 3DPoint(Inheritance)|
+| 15 | Exception Handling |
 
 ---
 # Practical-1
