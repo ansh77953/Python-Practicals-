@@ -14,10 +14,10 @@ Python Practicals
 | 9 | File Handling |
 | 10 |  Dictionary |
 | 11 | Tuple |
-| 12 |  |
-| 13 | Write a program to define a class "2DPoint" with coordinates x and y as attributes. Create relevant methods and print the objects. Also define a method distance to calculate the distance between any two point objects. |
-| 14 | Inherit the above class to create a "3Dpoint" with additional attribute z. Override the method defined in "2DPoint" class, to calculate distance between two points of the "3DPoint" class. |
-| 15 | Write a program to accept a name from a user. Raise and handle appropriate exception(s) if the text entered by the user contains digits and/or special characters. |
+| 12 | Employee Class |
+| 13 | Class 2DPoint |
+| 14 |  |
+| 15 |  |
 
 ---
 # Practical-1
@@ -50,7 +50,7 @@ else:
 
 
 ```
-Trail Run <br /> Inputs: a=1, b=5, c=6
+Trial Run <br /> Inputs: a=1, b=5, c=6
 
 Output:
 <img width="657" height="240" alt="Image" src="https://github.com/user-attachments/assets/43913bb4-c5bd-46a9-aed3-7a0f24411993" />
@@ -95,7 +95,7 @@ print("First", n, "primes:", first_n_primes(n))
 
 ```
 
-Trail Run <br /> Inputs: a=5
+Trial Run <br /> Inputs: a=5
 
 Output:
 <img width="1007" height="350" alt="Image" src="https://github.com/user-attachments/assets/6c8df528-622c-4385-8be6-d16cf2d28560" />
@@ -118,7 +118,7 @@ for i in range(rows, 0, -1):
 
 ```
 
-Trail Run <br /> Input: a=6
+Trial Run <br /> Input: a=6
 
 Output:
 <img width="1080" height="842" alt="Image" src="https://github.com/user-attachments/assets/fdff5d90-a6a6-4a42-be25-4e0a71760fba" />
@@ -146,7 +146,7 @@ else:
 
 ```
 
-Trail Run <br /> Inputs: A, 7 
+Trial Run <br /> Inputs: A, 7 
 
 Output:
 | <img width="982" height="303" alt="Image" src="https://github.com/user-attachments/assets/eceb4b4c-7d8a-428d-beeb-50b72292a7ae" /> | <img width="950" height="297" alt="Image" src="https://github.com/user-attachments/assets/7cee53a0-0fdf-4fac-be92-0cb01d4250ec" /> |
@@ -197,7 +197,7 @@ print("After removing all occurrences:", new_s)
 
 ```
 
-Trail Run <br /> Inputs:
+Trial Run <br /> Inputs:
 
 Output:
 <img width="1080" height="494" alt="Image" src="https://github.com/user-attachments/assets/f072d883-78a6-462d-8dfa-93629f05457e" />
@@ -218,7 +218,7 @@ print("After swapping:", new1, new2)
 
 ```
 
-Trail Run <br /> Inputs: 
+Trial Run <br /> Inputs: 
 First String: Khel khatam beta
 Second string: Baby doll masone di
 
@@ -246,7 +246,7 @@ print(find_indices("hello", "xyz"))    # -1
 
 ```
 
-Trail Run <br /> Inputs: <br /> s1=abababc, s2=ab <br /> s1=hello, s2=xyz
+Trial Run <br /> Inputs: <br /> s1=abababc, s2=ab <br /> s1=hello, s2=xyz
 
 Output: <br /> [0, 2, 4] <br /> -1 <br />
 <img width="744" height="240" alt="Image" src="https://github.com/user-attachments/assets/4d7d6d09-b4a8-4b43-b814-069f0c66dc0b" />
@@ -271,7 +271,7 @@ cubes = [i ** 3 for i in lst if type(i) == int and i % 2 == 0]
 print("Using list comprehension:", cubes)
 
 ```
-Trail Run <br /> Inputs: <br /> lst = [1, 2, "hello", 4, 3.5, 6, "8", 7, 10, True]
+Trial Run <br /> Inputs: <br /> lst = [1, 2, "hello", 4, 3.5, 6, "8", 7, 10, True]
 
 Output:
 <img width="920" height="240" alt="Image" src="https://github.com/user-attachments/assets/45dfbce6-a6a0-4016-b830-d936d26ed741" />
@@ -339,7 +339,7 @@ def print_cubes():
 print_cubes()
 
 ```
-Trail Run 
+Trial Run 
 
 Output: <br />
 <img width="922" height="296" alt="Image" src="https://github.com/user-attachments/assets/f3881bd3-fa7f-4bc8-b8d8-5546f12e9445" />
@@ -374,7 +374,7 @@ print("Maximum:", max(t3))
 print("Minimum:", min(t3))
 
 ```
-Trail Run <br /> Input: t1=(1, 2, 5, 7, 9, 2, 4, 6, 8, 10) 
+Trial Run <br /> Input: t1=(1, 2, 5, 7, 9, 2, 4, 6, 8, 10) 
 
 Output: <br /> <img width="1016" height="326" alt="Image" src="https://github.com/user-attachments/assets/c00f4d24-118d-493d-b89f-101ab625f0ec" />
 
@@ -383,3 +383,144 @@ Output: <br /> <img width="1016" height="326" alt="Image" src="https://github.co
 #### Define a class Employee that stores information about employees in the company. The class should contain the following: <br /> (i) data members- count (to keep a record of all the objects being created for this class) and for every employee: an employee number, Name, Dept, Basic, DA and HRA. <br /> (ii) function members: <br /> a._init_method to initialize and/or update the members. Add statements to ensure that the program is terminated if any of Basic, DA and HRA is set to a negative value. <br /> b. function salary, that returns salary as the sum of Basic, DA and HRA. <br /> _del_function to decrease the number of objects created for the class. <br /> d. str function to display the details of an employee along with the salary of an employee in a proper format.
 
 ```Python
+
+import sys
+
+class Employee:
+    count = 0
+
+    def __init__(self, empno, name, dept, basic, da, hra):
+        if basic < 0 or da < 0 or hra < 0:
+            print("Basic, DA and HRA cannot be negative. Program terminated.")
+            sys.exit()
+        self.empno = empno
+        self.name = name
+        self.dept = dept
+        self.basic = basic
+        self.da = da
+        self.hra = hra
+        Employee.count += 1
+
+    def salary(self):
+        return self.basic + self.da + self.hra
+
+    def __del__(self):
+        Employee.count -= 1
+
+    def __str__(self):
+        return ("Employee No: " + str(self.empno) +
+                "\nName: " + self.name +
+                "\nDept: " + self.dept +
+                "\nBasic: " + str(self.basic) +
+                "\nDA: " + str(self.da) +
+                "\nHRA: " + str(self.hra) +
+                "\nSalary: " + str(self.salary()))
+
+e1 = Employee(101, "Amit", "Sales", 30000, 5000, 8000)
+e2 = Employee(102, "Neha", "HR", 35000, 6000, 9000)
+print(e1)
+print()
+print(e2)
+print("Number of employees:", Employee.count)
+del e2
+print("After deleting one, number of employees:", Employee.count)
+
+```
+Trial Run <br /> 
+
+Output: <br />
+<img width="1023" height="678" alt="Image" src="https://github.com/user-attachments/assets/ab504d3f-f8d9-439d-b01a-c13ef132ad05" />
+
+---
+# Python-13
+#### Write a program to define a class "2DPoint" with coordinates x and y as attributes. Create relevant methods and print the objects. Also define a method distance to calculate the distance between any two point objects.
+
+```Python
+
+import math
+
+print("\n----- Q13 -----")
+
+class Point2D:
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        return "(" + str(self.x) + ", " + str(self.y) + ")"
+
+    def distance(self, other):
+        return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2)
+
+p1 = Point2D(1, 2)
+p2 = Point2D(4, 6)
+print("Point 1:", p1)
+print("Point 2:", p2)
+print("Distance:", p1.distance(p2))
+
+```
+Trial Run <br /> 
+
+Output: <br />
+<img width="780" height="240" alt="Image" src="https://github.com/user-attachments/assets/3043e0e5-c2b0-4bda-9342-c01d3f7fb158" />
+
+---
+# Practical-14
+#### Inherit the above class to create a "3Dpoint" with additional attribute z. Override the method defined in "2DPoint" class, to calculate distance between two points of the "3DPoint" class.
+
+```Python
+
+import math
+
+
+class Point3D(Point2D):
+    def __init__(self, x=0, y=0, z=0):
+        super().__init__(x, y)
+        self.z = z
+
+    def __str__(self):
+        return "(" + str(self.x) + ", " + str(self.y) + ", " + str(self.z) + ")"
+
+    def distance(self, other):
+        return math.sqrt((self.x - other.x) ** 2 +
+                         (self.y - other.y) ** 2 +
+                         (self.z - other.z) ** 2)
+
+q1 = Point3D(1, 2, 3)
+q2 = Point3D(4, 6, 8)
+print("Point 1:", q1)
+print("Point 2:", q2)
+print("Distance:", q1.distance(q2))
+
+```
+Trial Run <br />
+
+Output: <br />
+<img width="888" height="244" alt="Image" src="https://github.com/user-attachments/assets/5a0e277e-8dfd-4e9a-868c-dc14ec11ac50" />
+
+---
+# Practical-15
+#### Write a program to accept a name from a user. Raise and handle appropriate exception(s) if the text entered by the user contains digits and/or special characters.
+
+```Python
+
+class InvalidNameError(Exception):
+    pass
+
+try:
+    name = input("Enter your name: ")
+    for ch in name:
+        if ch.isdigit():
+            raise InvalidNameError("Name should not contain digits")
+        if not ch.isalpha() and ch != " ":
+            raise InvalidNameError("Name should not contain special characters")
+    print("Hello", name)
+except InvalidNameError as e:
+    print("Error:", e)
+
+```
+
+Trial Run <br />
+
+Output: <br />
+
