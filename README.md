@@ -3,7 +3,7 @@ Python Practicals
 # Index
 | S.No | Practical | 
 | :--- | :--- |
-| 1 | The roots of a quadratic equation. |
+| 1 | [The roots of a quadratic equation.](#Practucal-1) |
 | 2 | Prime Numbers <br /> a-Check Prime numbers  <br /> b-Print All Prime numbers till 'n' <br /> c-First 'n' Prime numbers |
 | 3 | Create a pyramid of '*' and a reverse pyramid. |
 | 4 | Check Character |
