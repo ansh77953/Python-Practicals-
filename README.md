@@ -249,6 +249,7 @@ print(find_indices("hello", "xyz"))    # -1
 Trail Run <br /> Inputs: <br /> s1=abababc, s2=ab <br /> s1=hello, s2=xyz
 
 Output: <br /> [0, 2, 4] <br /> -1
+<img width="744" height="240" alt="Image" src="https://github.com/user-attachments/assets/4d7d6d09-b4a8-4b43-b814-069f0c66dc0b" />
 
 ---
 # Practical-8
@@ -256,7 +257,7 @@ Output: <br /> [0, 2, 4] <br /> -1
 
 ```Python
 
-lst = input("Enter a list:- ")
+lst = [1, 2, "hello", 4, 3.5, 6, "8", 7, 10, True]
 
 # a. using for loop
 cubes = []
@@ -270,6 +271,9 @@ cubes = [i ** 3 for i in lst if type(i) == int and i % 2 == 0]
 print("Using list comprehension:", cubes)
 
 ```
-Trail Run <br /> Inputs
+Trail Run <br /> Inputs: <br /> lst = [1, 2, "hello", 4, 3.5, 6, "8", 7, 10, True]
+
+Output:
+<img width="920" height="240" alt="Image" src="https://github.com/user-attachments/assets/45dfbce6-a6a0-4016-b830-d936d26ed741" />
 
 
