@@ -1,5 +1,17 @@
 # Python-Practicals-
 Python Practicals 
+
+##Student Details
+
+| **Field** | **Details** |
+|:---|:---|
+| **Name** | Ansh Gupta |
+| **Course** | B.Sc. (Hons.) Computer Science |
+| **Semester** | I  |
+| **Roll Number** | `26570011` |
+| **Subject** | Programming Using Python |
+| **College** | Ramanujan College, University of Delhi |
+
 # Index
 | S.No | Practical | 
 | :--- | :--- |
