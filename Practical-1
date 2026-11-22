@@ -1,5 +1,6 @@
 # Practical-1
 
+```Python
 import math
 
 print("----- Q1 -----")
@@ -23,3 +24,4 @@ else:
         imag = math.sqrt(-d) / (2 * a)
         print("Complex roots:", real, "+", imag, "i and", real, "-", imag, "i")
 
+```
